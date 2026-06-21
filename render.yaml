@@ -1,0 +1,54 @@
+services:
+  - type: web
+    name: meditrust-ai-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: meditrust_ai
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5.5
+      - key: SESSION_SECRET
+        sync: false
+      - key: SESSION_TTL_HOURS
+        value: "12"
+      - key: DATA_ENCRYPTION_KEY
+        sync: false
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "900000"
+      - key: RATE_LIMIT_MAX
+        value: "240"
+      - key: T3N_API_KEY
+        sync: false
+      - key: TERMINAL3_DID
+        sync: false
+      - key: T3N_ENVIRONMENT
+        value: testnet
+      - key: T3N_NODE_URL
+        sync: false
+      - key: T3N_MEDICAL_CONTRACT_TAIL
+        value: meditrust-agent-audit
+      - key: T3N_MEDICAL_CONTRACT_VERSION
+        value: 1.0.0
+      - key: T3N_MEDICAL_CONTRACT_ID
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
