@@ -1,8 +1,35 @@
 # MediTrust AI
 
+[![Live App](https://img.shields.io/badge/Live_App-Vercel-black?style=for-the-badge&logo=vercel)](https://meditrust-ai.vercel.app)
+[![API Health](https://img.shields.io/badge/API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=111)](https://meditrust-ai-api.onrender.com/health)
+[![Terminal3](https://img.shields.io/badge/Terminal3-Agent_Auth-22c55e?style=for-the-badge)](https://docs.terminal3.io/developers/adk/overview/what-is-adk)
+
 MediTrust AI is a privacy-first medical report vault and assistant built for the Terminal3 Agent Developer Kit challenge. It lets a patient upload medical reports, generate AI explanations, redact sensitive fields, create expiring selective-disclosure links, and review an audit trail for every protected action.
 
 The app is designed around a simple rule: doctors, insurers, and care providers should only receive the fields they actually need.
+
+## Live Links
+
+- Live app: [meditrust-ai.vercel.app](https://meditrust-ai.vercel.app)
+- Backend health: [meditrust-ai-api.onrender.com/health](https://meditrust-ai-api.onrender.com/health)
+- Hackathon challenge: [Terminal3 ADK Developer Challenge](https://dorahacks.io/hackathon/t3adkdevchallenge/detail)
+- Terminal3 Agent Developer Kit: [ADK overview](https://docs.terminal3.io/developers/adk/overview/what-is-adk)
+- Terminal3 Network: [T3N overview](https://docs.terminal3.io/t3n/overview/what-is-t3n)
+- Terminal3 platform: [About Terminal3](https://docs.terminal3.io/intro/about-t3) and [platform overview](https://docs.terminal3.io/intro/platform)
+
+## Product Preview
+
+Screenshots below were captured from the deployed production app during the final QA pass.
+
+<p align="center">
+  <img src="./docs/images/dashboard-desktop.png" alt="MediTrust AI dashboard showing reports, alerts, shares, and Terminal3 status" width="100%">
+</p>
+
+<p align="center">
+  <img src="./docs/images/share-access-code-gate.png" alt="Recipient access-code gate for a protected MediTrust share link" width="32%">
+  <img src="./docs/images/share-redacted-open.png" alt="Redacted selective-disclosure report after entering the access code" width="32%">
+  <img src="./docs/images/dashboard-mobile.png" alt="Mobile dashboard layout for MediTrust AI" width="18%">
+</p>
 
 ## What It Does
 
@@ -204,6 +231,8 @@ frontend/
   hooks/
   lib/
   public/
+docs/
+  images/
 render.yaml
 project.md
 README.md
